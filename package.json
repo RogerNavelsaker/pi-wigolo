@@ -1,0 +1,30 @@
+{
+  "name": "pi-wigolo",
+  "version": "0.1.0",
+  "description": "Pi extension for managing Wigolo as a native MCP server",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "mcp",
+    "wigolo"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "test": "bun test",
+    "check": "bun test && bun build ./index.ts --target=bun --external @earendil-works/pi-coding-agent --outdir .build"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RogerNavelsaker/pi-wigolo.git"
+  },
+  "author": "Roger Navelsaker",
+  "license": "MIT"
+}
